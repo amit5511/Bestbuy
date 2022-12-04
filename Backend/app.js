@@ -7,8 +7,8 @@ const path=require('path');
 
 
 //configure dot env
-const dotenv = require("dotenv");
-dotenv.config({ path: "backend/config/.env" });
+// const dotenv = require("dotenv");
+// dotenv.config({ path: "backend/config/.env" });
 
 //
 app.use(express.json({limit: '50mb'}));
