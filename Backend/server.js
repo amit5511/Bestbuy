@@ -11,8 +11,8 @@ const app = require("./app");
 
 //configure dot env
 //no need on online mode only in 
-// const dotenv = require("dotenv");
-// dotenv.config({ path: "backend/config/.env" });
+const dotenv = require("dotenv");
+dotenv.config({ path: "backend/config/.env" });
 
 //connect to database
 const connect = require("./config/database");

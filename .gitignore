@@ -8,8 +8,8 @@
 # testing
 /Frontend/coverage
 
-# production
-/Frontend/build
+
+
 
 # misc
 /Backend/config/config.env
