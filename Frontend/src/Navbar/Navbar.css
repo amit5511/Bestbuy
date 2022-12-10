@@ -36,7 +36,7 @@
     width: 100%;
     background-color:white;
     border: 2px solid #e5e3dd;
-    position: fixed;
+    position: absolute;
     z-index: 6;
     
 }

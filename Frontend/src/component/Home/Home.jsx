@@ -10,7 +10,7 @@ import { useAlert } from "react-alert";
 import { clearErrors } from "../../action/productAction";
 import { Search } from "../Product/Search";
 import { useState } from "react";
-
+import SliderWrap from "./SliderWrap";
 import {
   Dialog,
   DialogActions,
@@ -19,7 +19,7 @@ import {
   Button
 } from '@material-ui/core';
 import MetaData from "../layout/MetaData";
-import { Banner } from "./Banner";
+
 import HomepageImage from '../../images/HomepageImage.jpg'
 import HomeImage from "./HomeImage";
 const Home = () => {
@@ -34,7 +34,7 @@ const Home = () => {
 
   //dialog
   const [open, setOpen] = useState(true);
-  
+
 
 
 
@@ -42,7 +42,7 @@ const Home = () => {
 
     setOpen(false);
   }
-  
+
 
   useEffect(() => {
 
@@ -50,11 +50,11 @@ const Home = () => {
       alert.error(error);
       dispatch(clearErrors());
     }
-   
-    
 
-   
-    
+
+
+
+
 
 
     dispatch(getProduct());
@@ -65,11 +65,11 @@ const Home = () => {
     <>
       {loading ? <Loader /> : <Fragment>
         <MetaData title={"Home Page"} />
-       
-       <HomeImage/>
 
-       
-      
+        <HomeImage />
+
+        <SliderWrap />
+
 
         <h2 className="homeHeading">Featured Products</h2>
 
@@ -77,7 +77,7 @@ const Home = () => {
           {products && products.map((product) => <ProductCard key={product._id} product={product} />)}
         </div>
 
-       {/* <Dialog
+        {/* <Dialog
           aria-labelledby="simple-dialog-title"
           open={open}
           onClose={submitReviewHandler}

@@ -3,7 +3,7 @@ import homeleftImage from '../../images/homeleftImage.PNG'
 import homerightImage from '../../images/homerightImage.PNG'
 import CategoryCard from './CategoryCard';
 import Typical from 'react-typical'
-import { Banner } from './Banner';
+
 const HomeImage = () => {
     const cateData = [
         { url: 'https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100', text: 'Top Offers' },

@@ -2,7 +2,7 @@
     position: fixed;
     right: 6vmax;
     top: 1.9vmax;
-    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .speedDialIcon {
